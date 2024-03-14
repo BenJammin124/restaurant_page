@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./img-font/Ubuntu-Regular.ttf') format('truetype'),
+    url('./img-font/Ubuntu-Italic.ttf') format('truetype'),
+    url('./img-font/Ubuntu-Bold.ttf') format('truetype'),
+    url('./img-font/Ubuntu-Light.ttf') format('truetype');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'MyFont';
+}
+
+/* nav */
+.nav-bar {
+  display: flex;
+  height: 7vh;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: .5rem;
+}
+
+.nav-btn {
+  font-size: 1.5rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-btn,
+.nav-btn:after,
+.nav-btn:before {
+  transition: all .5s;
+}
+
+.nav-btn:hover {
+  color: #818181;
+}
+
+.nav-btn:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.nav-btn:hover:after {
+  width: 100%;
+}
+
+
+/* home page */
+.homeBg {
+  height: 80vh;
+  width: 100%;
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  bottom: 15%;
+  left: 2%;
+}
+
+.slogan {
+  font-size: 1rem;
+  font-style: italic;
+  color: white;
+  position: absolute;
+  bottom: 15%;
+  left: 3%;
+}
+
+footer {
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.media {
+  width: 34px;
+  height: 34px;
+  margin-left: 10px;
+  margin-top: -7px;
+}
+
+div img.media:first-of-type {
+  margin-left: 0px;
+}
+
+/* menu */
+
+.menu-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-card p {
+  margin-top: 0;
+}
+
+.menu-card-left {
+  margin-left: 1rem;
+}
+
+.menu-card-left h2 {
+  font-size: 21px;
+}
+
+.price {
+  margin-right: 2rem;
+}
+
+.menu-title {
+  margin: 0 auto 21px auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.white {
+  background-color: white;
+  width: 60%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.white h2 {
+  margin: 0;
+}
+
+.burger-img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 500px;
+}
+
+/* contact page */
+
+.map-img {
+  display: block;
+  /* height: 250px; */
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contact-title {
+  margin-left: 5% !important;
+  padding-top: 1rem;
+  font-size: 22px;
+}
+
+.margin-left {
+  margin-left: 5%;
+}
+
+.email-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: .5rem;
+  margin-bottom: .2rem;
+}
+
+textarea {
+  margin-bottom: .5rem;
+}
